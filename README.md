@@ -2,11 +2,11 @@
 
 # Optimization over Non-Linear Non-Convex functions: a linearization approach
 
-Due to the difficulties in solving optimisation problems with non-linear constraints, a popular approach is to linearise the non-linear constraints.
+Due to the difficulties in solving optimisation problems with non-linear constraints, a popular approach is lower the problem complexity by linearization.
 
 This repository presents a generic implementation in GAMS for linearising a bivariate function using various methods. The idea is that practitioners build their models around the code presented, so the linearisation model is encapsulated at a lower level. 
 
-In addition, a Matlab script is provided for visualising generic bivariate functions and their triangulated versions, as those provided in this repository.
+In addition, a Matlab script is provided for visualising generic bivariate functions and their triangulated versions.
 <p>
     <img src="images/8x8.png" alt>
 </p>
@@ -36,14 +36,11 @@ The SOS2 formulations are implemented with the J1 and K1 triangulation.
 Let $z=f(x,y)$ be a continuous non-linear bivariate function (it can be non-convex), defined over the domain $[\underline{x},\overline{x}]\times [\underline{y},\overline{y}]$. The function
 $f(x,y)$ can be piecewise linearized by performing a triangulation of the domain over which the function is defined and imposing that for points lying in between any given triangle, the function is approximated by the linear combination of its three vertices.
 
-
-
-
 Parameters:
  - num_columns, num_rows: resolution of the triangularization region.
  - x_u,x_l,y_u,y_l, : upper and lower bounds of the domain ($[\underline{x},\overline{x}]\times [\underline{y},\overline{y}]$)
  - type_method: linearization method
-	 - ZigZag Integer (1)
+	 - Zig-Zag Integer (1)
 	 - Classic formulation (2)
 	 - Babeyev (3)
  - type_triangulation: triangulation pattern
@@ -53,7 +50,7 @@ Parameters:
 
 
 **Performance comparasion**
-The results presented in [1] showed that the Classic formulation and the ZigZagInteger approach with the J1 triangulation gave the best performance. Nevertheless, the performance is highly dependent on the underlying linearised function, so practitioners are advised to analyse different methods and triangulations.
+The results presented in [1] showed that the Classic formulation and the Zig-Zag Integer approach with the J1 triangulation gave the best performance. Nevertheless, the performance is highly dependent on the underlying linearised function, so practitioners are advised to analyse different methods and triangulations.
 
 An explanation of the implemented methods and a detailed performance analysis are presented in the following paper:
 
@@ -64,6 +61,7 @@ An explanation of the implemented methods and a detailed performance analysis ar
 ## Contact
 
 Salvador Guerrero García - salvadorgg@alu.comillas.edu - [LinkedIn](https://www.linkedin.com/in/salvador-guerrero-garcia/)
+
 Javier García-Gonzalez - javier.garcia@iit.comillas.edu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
