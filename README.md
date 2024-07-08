@@ -33,6 +33,7 @@ The SOS2 formulations are implemented with the J1 and K1 triangulation.
 
 
 **How to use:**
+
 Let $z=f(x,y)$ be a continuous non-linear bivariate function (it can be non-convex), defined over the domain $[\underline{x},\overline{x}]\times [\underline{y},\overline{y}]$. The function
 $f(x,y)$ can be piecewise linearized by performing a triangulation of the domain over which the function is defined and imposing that for points lying in between any given triangle, the function is approximated by the linear combination of its three vertices.
 
