@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "J. García-González"
+- family-names: "S. Guerrero"
+title: "Optimal management of a microgrid Li-Ion battery considering non-linear losses using the Integer Zig-Zag formulation"
+version: 1.0.0
+doi: 10.1016/j.epsr.2024.110776
+date-released: 2024-07-08
+url: "https://github.com/salvaguerrero/nl_pwl_optimization"
