@@ -73,9 +73,9 @@ positive variables
     x
     y
     z
+    theta(enteros,enteros)
 ;
 Variables
-    theta(enteros,enteros)
     v_fobj
 ;
 integer Variables
