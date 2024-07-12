@@ -25,7 +25,7 @@ In addition, a Matlab script is provided for visualising generic bivariate funct
 **Supported methods:**
 
  - SOS2 based formulations: 
-	 - Classic formulation
+	 - Textbook formulation
 	 - ZigZagInteger [Huchette 2019](https://doi.org/10.48550/arXiv.1708.00050)
 - Babayev approach: [Babayev, 1997](https://doi.org/10.1007/BF00132502) 
 
@@ -42,7 +42,7 @@ Parameters:
  - x_u,x_l,y_u,y_l, : upper and lower bounds of the domain ($[\underline{x},\overline{x}]\times [\underline{y},\overline{y}]$)
  - type_method: linearization method
 	 - Zig-Zag Integer (1)
-	 - Classic formulation (2)
+	 - Textbook formulation (2)
 	 - Babeyev (3)
  - type_triangulation: triangulation pattern
 	 - K1 triangulation (1)
@@ -51,7 +51,7 @@ Parameters:
 
 
 **Performance comparasion**
-The results presented in [1] showed that the Classic formulation and the Zig-Zag Integer approach with the J1 triangulation gave the best performance. Nevertheless, the performance is highly dependent on the underlying linearised function, so practitioners are advised to analyse different methods and triangulations.
+The results presented in [1] showed that the Textbook formulation and the Zig-Zag Integer approach with the J1 triangulation gave the best performance. Nevertheless, the performance is highly dependent on the underlying linearised function, so practitioners are advised to analyse different methods and triangulations.
 
 An explanation of the implemented methods and a detailed performance analysis are presented in the following paper:
 
@@ -63,7 +63,9 @@ An explanation of the implemented methods and a detailed performance analysis ar
 
 Salvador Guerrero García - salvadorgg@alu.comillas.edu - [LinkedIn](https://www.linkedin.com/in/salvador-guerrero-garcia/)
 
-Javier García-Gonzalez - javier.garcia@iit.comillas.edu
+Javier García-González - javiergg@iit.comillas.edu
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
